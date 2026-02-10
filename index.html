@@ -3,48 +3,602 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Portfolio</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; }
-        header { background: #2c3e50; color: white; padding: 10px 0; text-align: center; }
-        section { margin: 20px 0; padding: 20px; border: 1px solid #ddd; border-radius: 5px; }
-        footer { text-align: center; margin-top: 20px; }
-    </style>
+    <title>Brigette Yeo - RF Engineer | SAW Filter Specialist</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>John Doe</h1>
-        <h2>Electrical Engineer Specializing in SAW Filters</h2>
-    </header>
-    <section>
-        <h3>About Me</h3>
-        <p>As an electrical engineer with a specialization in Surface Acoustic Wave (SAW) filters, I have a profound understanding of signal processing and are adept at designing effective filtering solutions for various electronic applications.</p>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <span class="logo-icon">⚡</span>
+                    <span class="logo-text">Brigette Yeo</span>
+                </div>
+                <div class="nav-menu" id="navMenu">
+                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#expertise" class="nav-link">Expertise</a>
+                    <a href="#experience" class="nav-link">Experience</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Brigette Yeo</h1>
+                    <p class="hero-subtitle">RF Engineer | SAW Filter Specialist</p>
+                    <p class="hero-description">
+                        Designing advanced Surface Acoustic Wave filters for next-generation wireless communications with precision and innovation.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                        <a href="#projects" class="btn btn-secondary">View My Work</a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://linkedin.com" target="_blank" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/Littlefox15" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:brigette@email.com" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-image">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <section>
-        <h3>Skills</h3>
-        <ul>
-            <li>Design and Development of SAW Filters</li>
-            <li>RF Circuit Design</li>
-            <li>Signal Processing Algorithms</li>
-            <li>Project Management</li>
-            <li>Technical Documentation</li>
-        </ul>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        As a dedicated RF Engineer with specialized expertise in Surface Acoustic Wave (SAW) filter design and development, 
+                        I bring a passion for solving complex electromagnetic challenges in wireless communication systems.
+                    </p>
+                    <p>
+                        With extensive experience in filter characterization, impedance matching, and signal processing, 
+                        I've successfully contributed to multiple high-frequency applications ranging from 5G networks to satellite communications.
+                    </p>
+                    <p>
+                        My technical foundation includes strong proficiency in RF simulation tools, electromagnetic modeling, 
+                        and hands-on laboratory work with advanced measurement equipment. I'm committed to staying at the forefront 
+                        of wireless technology innovation.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>8+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>25+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>5</h3>
+                            <p>Patents Filed</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="placeholder-box">
+                        <i class="fas fa-wave-square"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <section>
-        <h3>Projects</h3>
-        <ul>
-            <li>Development of a Novel SAW Filter for Communication Systems</li>
-            <li>Implementation of Digital Signal Processing Algorithms for Filter Optimization</li>
-            <li>Collaboration on a Project for Biomedical Signal Filtering</li>
-        </ul>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="expertise">
+        <div class="container">
+            <h2 class="section-title">Technical Expertise</h2>
+            <div class="expertise-grid">
+                <!-- SAW Filters -->
+                <div class="expertise-card">
+                    <div class="expertise-icon">
+                        <i class="fas fa-filter"></i>
+                    </div>
+                    <h3>SAW Filter Design</h3>
+                    <p>Advanced design and optimization of Surface Acoustic Wave filters for RF applications, including frequency response modeling and fabrication coordination.</p>
+                    <ul class="skill-tags">
+                        <li>IDT Design</li>
+                        <li>Frequency Response</li>
+                        <li>Loss Optimization</li>
+                    </ul>
+                </div>
+
+                <!-- RF Circuit Design -->
+                <div class="expertise-card">
+                    <div class="expertise-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>RF Circuit Design</h3>
+                    <p>Comprehensive RF circuit design for amplifiers, filters, and matching networks with focus on performance and manufacturability.</p>
+                    <ul class="skill-tags">
+                        <li>Amplifier Design</li>
+                        <li>Impedance Matching</li>
+                        <li>PCB Layout</li>
+                    </ul>
+                </div>
+
+                <!-- Simulation & Modeling -->
+                <div class="expertise-card">
+                    <div class="expertise-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h3>Simulation & Modeling</h3>
+                    <p>Electromagnetic simulation and system-level modeling using industry-standard tools to predict device performance and optimize designs.</p>
+                    <ul class="skill-tags">
+                        <li>ADS</li>
+                        <li>HFSS</li>
+                        <li>CST</li>
+                    </ul>
+                </div>
+
+                <!-- Measurements & Testing -->
+                <div class="expertise-card">
+                    <div class="expertise-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>Measurement & Testing</h3>
+                    <p>Comprehensive characterization of RF devices using advanced laboratory equipment including network analyzers and spectrum analyzers.</p>
+                    <ul class="skill-tags">
+                        <li>S-Parameters</li>
+                        <li>Network Analysis</li>
+                        <li>Spectrum Analysis</li>
+                    </ul>
+                </div>
+
+                <!-- Wireless Communication -->
+                <div class="expertise-card">
+                    <div class="expertise-icon">
+                        <i class="fas fa-satellite"></i>
+                    </div>
+                    <h3>Wireless Systems</h3>
+                    <p>Deep understanding of wireless communication standards and their RF requirements for optimal filter integration.</p>
+                    <ul class="skill-tags">
+                        <li>5G/6G</li>
+                        <li>WiFi</li>
+                        <li>Satellite</li>
+                    </ul>
+                </div>
+
+                <!-- Project Management -->
+                <div class="expertise-card">
+                    <div class="expertise-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3>Project Management</h3>
+                    <p>Leading cross-functional teams from concept through production, managing timelines, budgets, and technical deliverables.</p>
+                    <ul class="skill-tags">
+                        <li>Agile</li>
+                        <li>Team Leadership</li>
+                        <li>Documentation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
-    <section>
-        <h3>Contact</h3>
-        <p>Email: johndoe@example.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/johndoe">linkedin.com/in/johndoe</a></p>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="timeline">
+                <!-- Experience Item 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Senior RF Engineer - SAW Filter Specialist</h3>
+                        <p class="company">Advanced Wireless Technologies Inc.</p>
+                        <p class="timeline-date">2022 - Present</p>
+                        <ul>
+                            <li>Led design and optimization of SAW filters for 5G and 6G applications</li>
+                            <li>Managed cross-functional teams in filter development from concept to production</li>
+                            <li>Achieved 15% improvement in filter insertion loss through design optimization</li>
+                            <li>Filed 3 patents on novel SAW filter architectures</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience Item 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>RF Design Engineer</h3>
+                        <p class="company">Precision Components Ltd.</p>
+                        <p class="timeline-date">2019 - 2022</p>
+                        <ul>
+                            <li>Designed and characterized SAW and BAW filters for commercial applications</li>
+                            <li>Performed extensive electromagnetic simulations and measurements</li>
+                            <li>Collaborated with manufacturing teams to resolve production challenges</li>
+                            <li>Published 2 technical papers on filter design techniques</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience Item 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Junior RF Engineer</h3>
+                        <p class="company">Communications Systems Corp.</p>
+                        <p class="timeline-date">2018 - 2019</p>
+                        <ul>
+                            <li>Assisted in RF circuit design and PCB layout for communication modules</li>
+                            <li>Performed measurements and troubleshooting of RF components</li>
+                            <li>Gained foundational expertise in wireless communication standards</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <footer>
-        <p>&copy; 2026 John Doe</p>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-filter"></i>
+                    </div>
+                    <h3>5G Band-Select SAW Filter</h3>
+                    <p class="project-category">Filter Design</p>
+                    <p class="project-description">
+                        Designed and optimized a novel SAW filter for 5G mid-band applications (2.6 GHz) with improved insertion loss and stopband rejection.
+                    </p>
+                    <div class="project-specs">
+                        <span><strong>Frequency:</strong> 2.6 GHz</span>
+                        <span><strong>IL:</strong> 1.8 dB</span>
+                        <span><strong>Rejection:</strong> >60 dB</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3>WiFi 6E Duplexer Integration</h3>
+                    <p class="project-category">System Integration</p>
+                    <p class="project-description">
+                        Integrated multiple SAW filters into a compact duplexer for WiFi 6E applications with minimal crosstalk and insertion loss.
+                    </p>
+                    <div class="project-specs">
+                        <span><strong>Bands:</strong> 2.4 & 5 GHz</span>
+                        <span><strong>Isolation:</strong> >35 dB</span>
+                        <span><strong>Size:</strong> 12mm²</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-satellite"></i>
+                    </div>
+                    <h3>Satellite Communication Filter Array</h3>
+                    <p class="project-category">RF Engineering</p>
+                    <p class="project-description">
+                        Engineered a multi-band SAW filter array for satellite receivers with stringent phase response requirements and low group delay variation.
+                    </p>
+                    <div class="project-specs">
+                        <span><strong>Bands:</strong> Ku/Ka</span>
+                        <span><strong>GD Variation:</strong> <5 ns</span>
+                        <span><strong>Status:</strong> In Production</span>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>Low-Phase-Noise Oscillator Design</h3>
+                    <p class="project-category">Circuit Design</p>
+                    <p class="project-description">
+                        Developed a low-phase-noise oscillator with integrated SAW resonator for timing-critical applications in communication systems.
+                    </p>
+                    <div class="project-specs">
+                        <span><strong>Frequency:</strong> 1.8 GHz</span>
+                        <span><strong>Phase Noise:</strong> -130 dBc/Hz</span>
+                        <span><strong>Power:</strong> 50 mW</span>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>Temperature-Compensated Filter Design</h3>
+                    <p class="project-category">Advanced Design</p>
+                    <p class="project-description">
+                        Created a temperature-compensated SAW filter architecture that maintains frequency stability across -40°C to +85°C operating range.
+                    </p>
+                    <div class="project-specs">
+                        <span><strong>Stability:</strong> ±5 ppm</span>
+                        <span><strong>Range:</strong> -40 to +85°C</span>
+                        <span><strong>Innovation:</strong> Patent Pending</span>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>RF Filter Performance Optimization Tool</h3>
+                    <p class="project-category">Software Development</p>
+                    <p class="project-description">
+                        Developed Python-based simulation tool for SAW filter design optimization, reducing design iteration cycles by 40%.
+                    </p>
+                    <div class="project-specs">
+                        <span><strong>Language:</strong> Python</span>
+                        <span><strong>Efficiency:</strong> 40% faster</span>
+                        <span><strong>Integration:</strong> ADS/CST</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Design Tools</h4>
+                    <div class="skill-bars">
+                        <div class="skill-bar">
+                            <span>Keysight ADS</span>
+                            <div class="progress"><div class="progress-fill" style="width: 95%"></div></div>
+                        </div>
+                        <div class="skill-bar">
+                            <span>HFSS</span>
+                            <div class="progress"><div class="progress-fill" style="width: 92%"></div></div>
+                        </div>
+                        <div class="skill-bar">
+                            <span>CST Microwave Studio</span>
+                            <div class="progress"><div class="progress-fill" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-bar">
+                            <span>Cadence Virtuoso</span>
+                            <div class="progress"><div class="progress-fill" style="width: 85%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h4>Programming Languages</h4>
+                    <div class="skill-bars">
+                        <div class="skill-bar">
+                            <span>Python</span>
+                            <div class="progress"><div class="progress-fill" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-bar">
+                            <span>MATLAB</span>
+                            <div class="progress"><div class="progress-fill" style="width: 88%"></div></div>
+                        </div>
+                        <div class="skill-bar">
+                            <span>C/C++</span>
+                            <div class="progress"><div class="progress-fill" style="width: 82%"></div></div>
+                        </div>
+                        <div class="skill-bar">
+                            <span>Verilog</span>
+                            <div class="progress"><div class="progress-fill" style="width: 78%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h4>Equipment & Instruments</h4>
+                    <div class="skill-bars">
+                        <div class="skill-bar">
+                            <span>Network Analyzer</span>
+                            <div class="progress"><div class="progress-fill" style="width: 95%"></div></div>
+                        </div>
+                        <div class="skill-bar">
+                            <span>Spectrum Analyzer</span>
+                            <div class="progress"><div class="progress-fill" style="width: 93%"></div></div>
+                        </div>
+                        <div class="skill-bar">
+                            <span>Vector Signal Generator</span>
+                            <div class="progress"><div class="progress-fill" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-bar">
+                            <span>Oscilloscope</span>
+                            <div class="progress"><div class="progress-fill" style="width: 92%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h4>Domain Expertise</h4>
+                    <div class="skill-bars">
+                        <div class="skill-bar">
+                            <span>5G/6G Technology</span>
+                            <div class="progress"><div class="progress-fill" style="width: 94%"></div></div>
+                        </div>
+                        <div class="skill-bar">
+                            <span>Wireless Standards</span>
+                            <div class="progress"><div class="progress-fill" style="width: 91%"></div></div>
+                        </div>
+                        <div class="skill-bar">
+                            <span>Filter Design</span>
+                            <div class="progress"><div class="progress-fill" style="width: 96%"></div></div>
+                        </div>
+                        <div class="skill-bar">
+                            <span>EMI/EMC</span>
+                            <div class="progress"><div class="progress-fill" style="width: 88%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education">
+        <div class="container">
+            <h2 class="section-title">Education & Certifications</h2>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Ph.D. in Electrical Engineering</h3>
+                    <p class="education-school">University of Technology</p>
+                    <p class="education-detail">Specialization: RF & Microwave Engineering</p>
+                    <p class="education-year">2018</p>
+                </div>
+
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>M.S. in Electrical Engineering</h3>
+                    <p class="education-school">Technical University</p>
+                    <p class="education-detail">Focus: Acoustic Wave Device Design</p>
+                    <p class="education-year">2016</p>
+                </div>
+
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Professional Certifications</h3>
+                    <p class="education-school">IEEE Microwave Theory & Techniques Society</p>
+                    <p class="education-detail">Member & Technical Committee Participant</p>
+                    <p class="education-year">Active</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Let's discuss your RF engineering challenges and opportunities</p>
+            
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:brigette@email.com">brigette@email.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <a href="tel:+1234567890">+1 (234) 567-890</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>San Jose, California, USA</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Professional Network</h4>
+                            <a href="https://linkedin.com" target="_blank">LinkedIn Profile</a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Brigette Yeo. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="https://linkedin.com" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Littlefox15" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:brigette@email.com" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="footer-note">Designed & Built with <span class="heart">❤</span> | RF Engineering Portfolio</p>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
